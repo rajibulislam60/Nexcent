@@ -7,7 +7,7 @@ const Navbar = () => {
   const closeMenu = () => setClick(false);
 
   return (
-    <div className="py-[22px] bg-[#F5F7FA]">
+    <div className="sticky top-0 py-[22px] bg-[#F5F7FA] z-50">
       <Container>
         <div className="flex justify-between items-center">
           <div>
@@ -16,7 +16,7 @@ const Navbar = () => {
           <div>
             <ul className="flex gap-[50px]">
               <li className="text-4 font-normal leading-[24px] text-[#18191F] hover:text-primary duration-[0.4s]">
-                <a href="/" onClick={closeMenu}>
+                <a href="#home" onClick={closeMenu}>
                   Home
                 </a>
               </li>

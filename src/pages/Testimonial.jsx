@@ -16,8 +16,8 @@ const Testimonial = () => {
     <div id="testimonial" className="py-[33px] bg-[#F5F7FA]">
       <Container>
         <div className="flex justify-between items-center">
-          <div className="max-w-[45%] mx-auto">
-            <img src={TestimonialImg} alt="Testimonial Image" />
+          <div className="max-w-[45%]">
+            <img src={TestimonialImg} alt="Testimonial Image" className="w-[400px]" />
           </div>
           <div className="max-w-[55%]">
             <p className="text-4 font-normal leading-[24px] text-para">

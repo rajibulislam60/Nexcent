@@ -9,6 +9,8 @@ import CountArea from './components/CountArea';
 import Products from './pages/Products';
 import Testimonial from './pages/Testimonial';
 import Blog from './pages/Blog';
+import Demo from './components/Demo';
+import Footer from './pages/Footer';
 
 const router = createBrowserRouter([
   {
@@ -24,14 +26,18 @@ const App = () => {
 
       <div>
         <Navbar />
-        <Home />
-        <Clients/>
-        <Service />
-        <Feature/>
-        <CountArea/>
-        <Products/>
-        <Testimonial/>
-        <Blog/>
+        <div>
+          <Home />
+          <Clients />
+          <Service />
+          <Feature />
+          <CountArea />
+          <Products />
+          <Testimonial />
+          <Blog />
+          <Demo />
+          <Footer />
+        </div>
       </div>
     </div>
   );

@@ -1,34 +1,37 @@
 import React from 'react'
-import BannerImg from './../components/images/Bannar.png'
+import BannerImg1 from './../components/images/Bannar.png'
+import BannerImg2 from "./../components/images/Feature.png";
+import BannerImg3 from "./../components/images/pana.png";
 import Container from '../components/Container';
-import Button from '../components/Button';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Bannar from '../components/Bannar';
+import Slider from 'react-slick';
+
+const sliderSettings = {
+  dots: true, 
+  infinite: true,
+  speed: 500, 
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  autoplay: true, 
+  autoplaySpeed: 4000, 
+  pauseOnHover: true, 
+  arrows: false, 
+};
 
 
 const Home = () => {
     
   return (
-    <div className="py-[96px] bg-[#F5F7FA] flex">
+    <div className="py-[96px] bg-[#F5F7FA] flex" id='home'>
       <Container>
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-[64px] font-semibold leading-[74px] max-w-[657px] text-secondary">
-              Lessons and insights{" "}
-              <span className="text-primary">from 8 years</span>
-            </h1>
-            <p className="text-4 font-normal leading-[24px] text-para mt-4">
-              Where to grow your business as a photographer: site or social
-              media?
-            </p>
-            <div className="max-w-[128px] mt-[32px]">
-              <Button
-                name="Register"
-                className="hover:bg-white hover:border hover:border-primary duration-[0.4s] hover:text-primary"
-              />
-            </div>
-          </div>
-          <div>
-            <img src={BannerImg} alt="" />
-          </div>
+        <div className="banner-slider">
+          <Slider {...sliderSettings}>
+            <Bannar src={BannerImg1} />
+            <Bannar src={BannerImg2} />
+            <Bannar src={BannerImg3} />
+          </Slider>
         </div>
       </Container>
     </div>
