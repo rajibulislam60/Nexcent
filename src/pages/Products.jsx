@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../components/Container';
-import ProductImg from "./../components/images/Pana.png";
+import ProductImg from "./../components/images/pana.png";
 import Button from "../components/Button";
 
 const Products = () => {
